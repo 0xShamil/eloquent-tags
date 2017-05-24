@@ -1,0 +1,32 @@
+{
+    "name": "shamil/eloquent-tags",
+    "description": "A tagging package for Laravel Eloquent models",
+    "authors": [
+        {
+            "name": "Shamil Choudhury",
+            "email": "shamilchoudhury94@gmail.com"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"Shamil\\Tags\\": "src"
+    	}
+    },
+    "require": {
+    	"php": ">=7.0.0",
+    	"illuminate/database": ">= 5.0",
+    	"illuminate/support": ">= 5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench-browser-kit": "~3.1",
+        "phpunit/phpunit": "~5.7",
+        "orchestra/database": "~3.1"
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php",
+            "tests/stubs/LessonStub.php",
+            "tests/stubs/TagStub.php"
+        ]
+    }
+}
